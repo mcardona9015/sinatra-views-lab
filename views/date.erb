@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Page</title>
+    </head>
+    <body>
+        <%date = Time.now.to_date%>
+        <%wday = date.strftime("%A")%>
+        <%month = date.strftime("%B")%>
+        <%day = date.day%>
+        <%year = date.year%>
+        <h1>Today</h1>
+        <p><%= "The date is #{wday}, #{month} #{day}, #{year}"%></p>
+    </body>
+</html>
